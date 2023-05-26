@@ -1,0 +1,139 @@
+.btn {
+    &:link,
+    &:visited {
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        color: $color-white;
+        background-color: $color-primary;
+        flex-wrap: wrap;
+        max-width: 288px;
+        padding: 12px 40px;
+        box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.2);
+        width: max-content;
+        border: none;
+        border-radius: 28px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        transition: all 0.2s;
+    }
+  
+
+  &:hover {
+    background-color:(darken($color: $color-primary, $amount: 5));
+  }
+
+  &-animated {
+    animation-name: MoveInTop;
+      animation-duration: .5s;
+      animation-delay: .75s;
+      animation-fill-mode: backwards;
+      animation-timing-function: cubic-bezier(0.11, 0, 0.5, 0);
+  }
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+
+  
+}
+
+
+button.btn-2 {
+  width: 12rem;
+  height: auto;
+}
+button.btn-2 .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: $color-primary;
+  border-radius: 1.625rem;
+}
+
+
+button.btn-2 .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+
+button.btn-2 .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.15rem;
+  background: none;
+}
+
+
+button.btn-2 .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.18rem solid #fff;
+  border-right: 0.18rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+
+button.btn-2 .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: $color-primary;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+ 
+}
+
+
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
+
+// @supports (display: grid) {
+//   body {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-gap: 0.625rem;
+//     grid-template-areas: ". main main ." ". main main .";
+//   }
+// }
+

@@ -1,0 +1,26 @@
+.feature-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-box {
+  margin: auto;
+  width: 36rem;
+  padding: 3rem;
+  text-align: center;
+  transition: all 0.3s;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+  &:not(:last-child) {
+    margin-right: 8rem;
+  }
+
+  &--paragraph {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: justify;
+  }
+}

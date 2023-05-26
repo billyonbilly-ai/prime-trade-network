@@ -1,0 +1,28 @@
+.features {
+    height: 95vh;
+    background-color: $color-base;
+    margin: 0;
+   padding: 5rem 10% 0 10%;
+}
+
+.market {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $color-base;
+    margin: 0;
+   padding: 0rem 10% 5rem 10%;
+}
+
+.reviews {
+    background-color:(darken($color: $color-primary, $amount: 5));
+    position: relative;
+     padding: 0rem 10%;
+     margin: 0;
+     height: 60vh;
+
+}
+
+
